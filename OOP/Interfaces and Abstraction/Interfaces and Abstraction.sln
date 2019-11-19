@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonInfo", "Define an Interface IPerson\PersonInfo.csproj", "{7297F7A0-776F-4343-8E85-A321D63272C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonInfo", "Define an Interface IPerson\PersonInfo.csproj", "{7297F7A0-776F-4343-8E85-A321D63272C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ferrari", "Ferrari\Ferrari.csproj", "{188D813A-76F1-4ED2-9C9B-A40DCEADE605}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ferrari", "Ferrari\Ferrari.csproj", "{188D813A-76F1-4ED2-9C9B-A40DCEADE605}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Telephony", "Telephony\Telephony.csproj", "{0A50DCF4-E231-4C54-9500-988B81CE7D03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Telephony", "Telephony\Telephony.csproj", "{0A50DCF4-E231-4C54-9500-988B81CE7D03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Border Control", "Border Control\Border Control.csproj", "{D4A6A027-DA9D-4C43-AD20-EDFB3B310C99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Birthday_Celebrations", "Birthday_Celebrations\Birthday_Celebrations.csproj", "{EE6CE9A6-9AC5-43DF-9DF2-51D74093E959}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Birthday_Celebrations", "Birthday_Celebrations\Birthday_Celebrations.csproj", "{EE6CE9A6-9AC5-43DF-9DF2-51D74093E959}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food_Shortage", "Food_Shortage\Food_Shortage.csproj", "{9BEA2A57-BE06-480F-8633-746B34208C53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Food_Shortage", "Food_Shortage\Food_Shortage.csproj", "{9BEA2A57-BE06-480F-8633-746B34208C53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collection_Hierarchy", "Collection_Hierarchy\Collection_Hierarchy.csproj", "{0F82BA58-4978-4B0D-A0AF-18854C4289CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Collection_Hierarchy", "Collection_Hierarchy\Collection_Hierarchy.csproj", "{0F82BA58-4978-4B0D-A0AF-18854C4289CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Military Elite", "Military Elite\Military Elite.csproj", "{2B0FEAD2-299E-4FFA-AB9F-4A872F37BCA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Military Elite", "Military Elite\Military Elite.csproj", "{2B0FEAD2-299E-4FFA-AB9F-4A872F37BCA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Explicit Interface", "Explicit Interface\Explicit Interface.csproj", "{C9026AD1-C339-43BC-AD1F-E0C4642392EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{2B0FEAD2-299E-4FFA-AB9F-4A872F37BCA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B0FEAD2-299E-4FFA-AB9F-4A872F37BCA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B0FEAD2-299E-4FFA-AB9F-4A872F37BCA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9026AD1-C339-43BC-AD1F-E0C4642392EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9026AD1-C339-43BC-AD1F-E0C4642392EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9026AD1-C339-43BC-AD1F-E0C4642392EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9026AD1-C339-43BC-AD1F-E0C4642392EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
