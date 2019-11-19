@@ -1,10 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Wild_Farm.Animals
+﻿namespace Wild_Farm.Animals
 {
-    class Mammal
+    public abstract class Mammal : Animal
     {
+        private string  livingRegion;
+
+        protected Mammal(string animalType, string name, double weight, string livingRegion) 
+            : base(animalType,name, weight)
+        {
+            LivingRegion = livingRegion;
+        }
+
+        public string  LivingRegion
+        {
+            get { return livingRegion; }
+            set { livingRegion = value; }
+        }
+
     }
 }
