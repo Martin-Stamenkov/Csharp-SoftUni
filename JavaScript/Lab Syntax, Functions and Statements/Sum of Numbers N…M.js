@@ -1,5 +1,5 @@
 function solve(num1,num2){
-let result = 0;
+    let result = 0;
 
     let parsedNum1 = Number(num1);
     let parsedNum2 = Number(num2);
