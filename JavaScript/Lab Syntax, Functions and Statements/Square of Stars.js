@@ -22,4 +22,4 @@ let result = '';
           console.log(result) 
     }
 }
-solve('2');
+//solve(5);
