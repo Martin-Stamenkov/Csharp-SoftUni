@@ -6,6 +6,6 @@ function solve(text) {
     let toUpper = result.join(', ').toUpperCase();
 
 
-console.log(toUpper);
+    console.log(toUpper);
 }
-solve('Hi, how are you?');
+//solve('Hi, how are you?');
