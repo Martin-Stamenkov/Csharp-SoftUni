@@ -13,4 +13,4 @@ function solve(input) {
   }
     result.forEach(element => console.log(element))
 }
-solve([3, -2, 0, -1])
+//solve([3, -2, 0, -1])
