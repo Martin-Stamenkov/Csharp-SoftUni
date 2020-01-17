@@ -20,4 +20,4 @@ function solve(input) {
         console.log('Empty');
     }
 }
-solve(['add', 'add', 'remove', 'add', 'add'])
+solve(['add', 'add', 'remove', 'add', 'add']);
