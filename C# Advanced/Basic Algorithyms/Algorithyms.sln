@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recursion.csproj", "{6A4996F7-CBC3-4482-8EC0-9DE57FF7F452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Recursion", "Recursion\Recursion.csproj", "{6A4996F7-CBC3-4482-8EC0-9DE57FF7F452}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sum Array with Recursion", "Sum Array with Recursion\Sum Array with Recursion.csproj", "{5B936041-1993-4331-BD3E-E6DE7350EF06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sum Array with Recursion", "Sum Array with Recursion\Sum Array with Recursion.csproj", "{5B936041-1993-4331-BD3E-E6DE7350EF06}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greedy Algorithm", "Greedy Algorithm\Greedy Algorithm.csproj", "{D2312593-FF9C-46D4-9688-BCA21CF1B6F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting Algorithms", "Sorting Algorithms\Sorting Algorithms.csproj", "{D8BB22F2-55EC-4A16-991C-346A20246A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{5B936041-1993-4331-BD3E-E6DE7350EF06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B936041-1993-4331-BD3E-E6DE7350EF06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B936041-1993-4331-BD3E-E6DE7350EF06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2312593-FF9C-46D4-9688-BCA21CF1B6F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2312593-FF9C-46D4-9688-BCA21CF1B6F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2312593-FF9C-46D4-9688-BCA21CF1B6F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2312593-FF9C-46D4-9688-BCA21CF1B6F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8BB22F2-55EC-4A16-991C-346A20246A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8BB22F2-55EC-4A16-991C-346A20246A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8BB22F2-55EC-4A16-991C-346A20246A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8BB22F2-55EC-4A16-991C-346A20246A61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
