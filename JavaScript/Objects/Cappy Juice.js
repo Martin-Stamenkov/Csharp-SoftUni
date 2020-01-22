@@ -26,7 +26,6 @@ function solve(input) {
             console.log(output[i].join(' => '));
         }
 
-    //return parsedJucies;
 }
 console.log(solve(['Orange => 2000',
     'Peach => 1432',
