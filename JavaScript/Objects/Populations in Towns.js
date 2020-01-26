@@ -3,17 +3,17 @@ function solve(input) {
     let data = input.reduce((acc, line) => {
         let [town, population] = line.split('<->').map(x => x.trim());
         if (!acc[town]) {
-            acc[town] = 0; 
+            acc[town] = 0;
         }
         acc[town] += +population;
 
-return acc;
+        return acc;
     }, {});
-  for (const key in data) {
-     console.log(`${key} : ${data[key]}`)
-          
-      }
-  }
+    for (const key in data) {
+        console.log(`${key} : ${data[key]}`)
+
+    }
+}
 
 
 solve(['Istanbul <-> 100000',
