@@ -26,4 +26,4 @@ function solve(name, age, weight, height) {
 
     return totalInfo;
 }
-console.log(solve('Peter', 29, 200, 182))
+console.log(solve('Peter', 29, 75, 182))
