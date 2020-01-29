@@ -88,8 +88,6 @@ function solve(input) {
 
         return Object.values(gladiatorPool[name])
             .reduce((totalSkills, skill) => totalSkills + skill);
-
-
     }
 
 }

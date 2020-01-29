@@ -19,7 +19,7 @@ function solve(input) {
         let townWithLowestPrice = "";
 
         for (const [town, price] of Object.entries(towns)) {
-            if (lowestPrice>price) {
+            if (lowestPrice > price) {
                 lowestPrice = price;
                 townWithLowestPrice = town;
             }
