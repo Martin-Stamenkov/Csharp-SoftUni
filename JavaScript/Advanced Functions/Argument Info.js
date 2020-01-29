@@ -6,7 +6,7 @@ function solve(...args) {
 
         console.log(`${typeof (argument)}: ${argument} `)
 
-        if (!obj in (typeof (argument))) {
+        if (!obj.hasOwnProperty(typeof (argument))) {
             obj[typeof (argument)] = 0;
         }
         obj[typeof (argument)]++;
