@@ -18,12 +18,7 @@ function createArticle() {
 
 		let articles = document.getElementById("articles")
 		articles.appendChild(article);
-		articles.value = '';
 
 	}
-
-
-
-
 
 }
