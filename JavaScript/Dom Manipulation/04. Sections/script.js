@@ -7,8 +7,6 @@ function create(words) {
       paragraph.innerHTML = word;
       paragraph.style.display = 'none'
 
-
-
       let div = document.createElement('div');
       div.appendChild(paragraph)
       div.addEventListener('click', () => {
