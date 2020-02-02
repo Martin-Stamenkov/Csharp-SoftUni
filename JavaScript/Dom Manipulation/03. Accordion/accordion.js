@@ -8,12 +8,11 @@ function toggle() {
 
         button.textContent = 'Less'
         text.style.display = 'block'
+        
     } else if (button.textContent === 'Less') {
         button.textContent = 'More'
         text.style.display = 'none'
 
     }
-
-
 
 }
