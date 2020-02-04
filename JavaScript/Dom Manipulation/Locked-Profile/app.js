@@ -1,9 +1,6 @@
 function lockedProfile() {
 
-    let users = document.getElementsByClassName('profile');
-
     let buttons = document.getElementsByTagName('button')
-
 
     for (const button of buttons) {
 
