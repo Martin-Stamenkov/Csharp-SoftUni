@@ -10,5 +10,6 @@ class Rectangle {
         return this.height * this.width
     }
 }
-let rect = new Rectangle(4,5,'red')
+let rect = new Rectangle(4, 5, 'red')
+
 console.log(rect.calcArea())
