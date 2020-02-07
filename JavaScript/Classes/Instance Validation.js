@@ -32,7 +32,7 @@ class CheckingAccount {
         return this._firstName;
     }
     set firstName(value) {
-        let regexLength = /\w{3,20}/;
+        let regexLength = /\S{3,20}/;
         let regexName = /[a-z]+/;
         if (!value.match(regexLength)) {
 
@@ -50,14 +50,14 @@ class CheckingAccount {
         return this._lastName
     }
     set lastName(value) {
-        let regexLength = /\w{3,20}/;
+        let regexLength = /\S{3,20}/;
         let regexName = /[a-z]+/;
 
         if (!value.match(regexLength)) {
 
             throw new TypeError("Last name must be between 3 and 20 characters long")
         }
-        if (!value.match(regexName)) {
+        if (!value.match(regexName)) { 
             throw new TypeError("Last name must contain only Latin characters")
         }
 
