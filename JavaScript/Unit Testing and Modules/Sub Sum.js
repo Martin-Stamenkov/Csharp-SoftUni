@@ -13,9 +13,9 @@ function solve(arr, startIndex, endIndex) {
         endIndex = parsedArr.length - 1
     }
     if (arr.length === 0) {
-       return 0;
+        return 0;
     } else {
- 
+
         for (let i = startIndex; i <= endIndex; i++) {
             result += parsedArr[i];
         }
