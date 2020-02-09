@@ -14,7 +14,7 @@ function attachEventsListeners() {
 
         if (inputUnits.value === 'km') totalMetters = +input.value * 1000;
         else if (inputUnits.value === 'm') totalMetters = +input.value * 1
-        else if (inputUnits.value === 'cm') totalMetters = +input.value * 0.1
+        else if (inputUnits.value === 'cm') totalMetters = +input.value * 0.01
         else if (inputUnits.value === 'mm') totalMetters = +input.value * 0.001
         else if (inputUnits.value === 'mi') totalMetters = +input.value * 1609.34
         else if (inputUnits.value === 'yrd') totalMetters = +input.value * 0.9144
@@ -23,8 +23,8 @@ function attachEventsListeners() {
 
         if (outputUnits.value === 'km') distanceConverted = +totalMetters / 1000
         else if (outputUnits.value === 'm') distanceConverted = +totalMetters / 1
-        else if (outputUnits.value === 'cm') distanceConverted = +totalMetters * 100
-        else if (outputUnits.value === 'mm') distanceConverted = +totalMetters * 1000
+        else if (outputUnits.value === 'cm') distanceConverted = +totalMetters /0.01
+        else if (outputUnits.value === 'mm') distanceConverted = +totalMetters /0.001
         else if (outputUnits.value === 'mi') distanceConverted = +totalMetters / 1609.34
         else if (outputUnits.value === 'yrd') distanceConverted = +totalMetters / 0.9144
         else if (outputUnits.value === 'ft') distanceConverted = +totalMetters /  0.3048
