@@ -29,11 +29,10 @@ describe('rgbToHexColor tests', () => {
         assert.equal(rgbToHexColor(12, -1, 15), undefined)
         assert.equal(rgbToHexColor(-1, 12, 15), undefined)
     })
-    it('return hexadecimal format', () => {
-
-        assert.equal(rgbToHexColor(5, 5, 5), '#050505')
-        assert.equal(rgbToHexColor(10, 15, 20), '##0A0F14')
-        assert.equal(rgbToHexColor(14, 14, 14), '##0E0E0E')
-    })
-
+    it('should return valid hex', () => {
+        assert.equal(rgbToHexColor(1, 1, 1), '#010101');
+        assert.equal(rgbToHexColor(255, 255, 255), '#FFFFFF');
+        assert.equal(rgbToHexColor(1, 100, 200), '#0164C8');
+        assert.equal(rgbToHexColor(0, 0, 0), '#000000');
+    });
 }) 
