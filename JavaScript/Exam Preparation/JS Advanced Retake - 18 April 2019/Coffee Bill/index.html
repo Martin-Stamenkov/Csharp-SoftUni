@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee Bill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <h2>Coffee Bill</h2>
+    <table id="bill">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="product-list"></tbody>
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+    <section id="add-product">
+        <h3>Add new product</h3>
+        <label>
+            <span>
+                Product:
+            </span>
+            <input type="text">
+        </label>
+        <label>
+            <span>
+                Price:
+            </span>
+            <input type="number">
+        </label>
+        <button onclick="addProduct()">Add</button>
+    </section>
+
+    <script>
+        function addProduct() {
+
+            let products = document.getElementById("product-list");
+
+            let fields = document.getElementsByTagName('input');
+            let totalSum = document.getElementsByTagName('td')[1];
+
+            let product = fields[0].value;
+            let price = Number(fields[1].value);
+
+            if (price > 0 && product !== '' && price !== '') {
+                let tr = document.createElement('tr');
+                let tdProduct = document.createElement('td');
+                let tdPrice = document.createElement('td');
+
+                tdProduct.innerHTML = product;
+                tdPrice.innerHTML = price;
+                tr.appendChild(tdProduct);
+                tr.appendChild(tdPrice);
+
+                products.appendChild(tr)
+                document.querySelectorAll("tfoot > tr > td")[1].innerHTML =
+                    Number(document.querySelectorAll("tfoot > tr > td")[1].innerHTML) + price;
+
+            }
+            fields[0].value = '';
+            fields[1].value = '';
+
+
+        }
+    </script>
+
+</body>
+
+</html>
