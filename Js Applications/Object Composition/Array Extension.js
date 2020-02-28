@@ -29,7 +29,7 @@
         return this.reduce((acc, curr, i, arr) => acc + curr) / this.length
     }
 
-    let myArray = [1, 2, 3]
-    console.log(myArray.average())
+    // let myArray = [1, 2, 3]
+    // console.log(myArray.average())
 
 })();
