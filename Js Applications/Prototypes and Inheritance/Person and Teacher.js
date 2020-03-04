@@ -15,6 +15,5 @@ function personAndTeacher() {
     return {
         Person,
         Teacher
-    }
+    };
 }
-console.log(personAndTeacher)
