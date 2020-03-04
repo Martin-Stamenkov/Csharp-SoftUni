@@ -1,7 +1,7 @@
 function solve() {
 
     let myObj = {
-        extend: (template) => {
+        extend: function (template)  {
             Object.keys(template).forEach((key) => {
                 if (typeof template[key] === 'function') {
                     Object.getPrototypeOf(this)[key] = template[key]
