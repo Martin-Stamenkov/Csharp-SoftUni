@@ -2,6 +2,9 @@ function solve() {
 
     class Employee {
         constructor(name, age) {
+            if (new.target === Employee) {
+                throw new Error('Cannot instantiate directly.')
+            }
             this.name = name;
             this.age = age;
             this.salary = 0;
@@ -18,7 +21,7 @@ function solve() {
         }
 
         collectSalary() {
-            return `${this.name} received ${this.getSalary()} this month.`
+            console.log(`${this.name} received ${this.getSalary()} this month.`)
         }
 
     }
@@ -27,6 +30,7 @@ function solve() {
             super(name, age)
             this.tasks.push(` is working on a simple task.`)
         }
+        
     }
     class Senior extends Employee {
         constructor(name, age) {
@@ -35,16 +39,17 @@ function solve() {
             this.tasks.push(` is taking time off work.`)
             this.tasks.push(` is supervising junior workers.`)
         }
+
     }
     class Manager extends Employee {
         constructor(name, age) {
             super(name, age)
-#            this.divident = 0;
+            this.dividend = 0;
             this.tasks.push(` scheduled a meeting.`)
             this.tasks.push(` is preparing a quarterly report.`)
         }
         getSalary(){
-            return this.salary + this.divident;
+            return this.salary + this.dividend;
         }
     }
     return{
