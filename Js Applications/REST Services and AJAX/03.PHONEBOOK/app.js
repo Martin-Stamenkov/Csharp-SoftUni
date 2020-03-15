@@ -6,9 +6,7 @@ function attachEvents() {
     let btnCreate = document.getElementById("btnCreate")
     let phonebookData = document.getElementById("phonebook")
 
-
     loadBtn.addEventListener('click', loadContacts)
-
     btnCreate.addEventListener('click', createContact)
 
     function createContact() {
@@ -34,7 +32,7 @@ function attachEvents() {
                 phonebookData.innerHTML = '';
                 loadContacts()
             })
-            .catch(error)
+            .catch(() => console.error('Error'))
     }
     function loadContacts() {
 
@@ -59,7 +57,7 @@ function attachEvents() {
                     phonebookData.appendChild(li)
                 });
             })
-            .catch(() => console.log('Error'))
+            .catch(() => console.error('Error'))
     }
     function deleteContact() {
 
@@ -72,14 +70,7 @@ function attachEvents() {
                 phonebookData.innerHTML = '';
                 loadContacts();
             })
-            .catch(() => console.log('Error'))
-    }
-    function error() {
-        let correctInputs = typeof document.getElementById("phone").value === 'number' && typeof document.getElementById("person").value === 'string'
-
-        if (correctInputs) {
-            console.error('Invalid input');
-        }
+            .catch(() => console.error('Error'))
     }
 
 }
