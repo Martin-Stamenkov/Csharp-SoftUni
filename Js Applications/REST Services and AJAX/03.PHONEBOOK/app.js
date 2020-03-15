@@ -74,13 +74,5 @@ function attachEvents() {
             })
             .catch(() => console.log('Error'))
     }
-    function error() {
-        let correctInputs = typeof document.getElementById("phone").value === 'number' && typeof document.getElementById("person").value === 'string'
-
-        if (correctInputs) {
-            console.error('Invalid input');
-        }
-    }
-
 }
 attachEvents();
