@@ -72,6 +72,5 @@ function attachEvents() {
             })
             .catch(() => console.error('Error'))
     }
-
 }
 attachEvents();
